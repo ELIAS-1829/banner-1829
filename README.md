@@ -1,6 +1,6 @@
 # banner-1829
 Banner de calabera 
-<•••••COMANDOS DE INSTALACIONS°°°°°>
+COMANDOS DE INSTALACIONS
 
 
 apt update && apt upgrade -y
