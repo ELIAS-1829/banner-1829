@@ -1,0 +1,45 @@
+#!/bin/bash
+while : 
+do
+clear 
+azul="\033[38;5;31m"
+rojo="\033[38;1;31m"
+verd="\033[38;0;32m"
+purp="\033[38;1;35m"
+amar="\033[38;1;33m"
+echo -e "$amar ******************************************************************"
+echo -e "$azul "
+figlet BANNER
+       echo -e "$purp"
+echo    "              BIENVENIDO AL BANNER DE LA LG-REINA "
+echo -e "$amar ******************************************************************"
+
+echo -e "
+$amar[$rojo 1 $amar] $purp banner de LG-REINA 
+$amar[$rojo 2 $amar] $purp banner defaul 
+$amar[$rojo 3 $amar] $purp banner de ft
+$amar[$rojo 4 $amar] $purp salir
+"
+echo -e "$verd"
+read -p "eliga su opcion de banner " opc 
+
+if [ $opc -gt 4 ];then 
+echo -e "********ERROR LA OPCION INGRESADA NO EXISTE********"
+sleep 3.9
+elif [ $opc -eq 1 ];then 
+bash banner.sh
+echo "ABRA OTRA SECION PARA VER EL BANNER "
+read -p "aprete ENTER para volver al inicio o aprete CTRL + C PARA SALIR "
+elif [ $opc -eq 2 ];then
+bash remove.sh
+echo "ABRA OTRA SECCION PARA VER EL BANNER"
+read -p "aprete ENTER para volver al inicio o aprete CTRL + C PARA SALIR "
+elif [ $opc -eq 3 ];then
+bash ele.sh 
+echo "ABRA OTRA SECCION PARA VER EL BANNER"
+read -p "aprete ENTER para volver al inicio o aprete CTRL + C PARA SALIR "
+elif [ $opc -eq 4 ];then
+echo "gracias por usar nuestro banner"
+exit
+fi 
+done 
